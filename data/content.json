@@ -1,0 +1,94 @@
+{
+  "name": "Leonardo Nkuba",
+  "tagline": "Software Developer & Computer Programming Student.",
+  "bio": "I'm a Software Developer passionate about building practical digital solutions that solve real-world problems. I enjoy developing modern web applications, designing intuitive user experiences, and continuously expanding my knowledge of software engineering. Whether working independently or as part of a team, I strive to create reliable, scalable, and impactful software.",
+  "email": "leonkubamn2020@gmail.com",
+  "social": [
+    {
+      "name": "GitHub",
+      "url": "https://github.com/LeonardoNkuba"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://linkedin.com/in/leonardo-nkuba"
+    }
+  ],
+  "skills": [
+    "Java",
+    "JavaScript",
+    "TypeScript",
+    "Python",
+    "C++",
+    "C",
+    "HTML",
+    "CSS",
+    "React",
+    "Next.js",
+    "Node.js",
+    "Tailwind CSS",
+    "MySQL",
+    "SQL",
+    "Git",
+    "GitHub"
+  ],
+  "experience": [
+    {
+      "company": "EvolvOut",
+      "position": "Solutions Analyst & Co-Founder",
+      "period": "Dec 2024 - Present",
+      "description": "Designed and delivered digital solutions for businesses, collaborating on websites, branding, and custom software while translating client needs into scalable technical solutions."
+    },
+    {
+      "company": "PEA - Programa de Extensão Acadêmica",
+      "position": "Programmer & Systems Developer",
+      "period": "Jul 2025 - Oct 2025",
+      "description": "Developed and maintained full-stack systems, designed responsive user interfaces, optimized databases, and contributed to software that improved academic and administrative workflows."
+    },
+    {
+      "company": "Freelance",
+      "position": "Software & Web Developer",
+      "period": "Aug 2024 - Present",
+      "description": "Built full-stack applications and websites, including business solutions, web platforms, and software prototypes focused on usability, performance, and modern development practices."
+    }
+  ],
+  "projects": [
+    {
+    "title": "Python Monsters",
+    "description": "A turn-based RPG built in Python, inspired by Pokémon and the classic Final Fantasy series. The game features monster battles, character progression, inventory management, and modular object-oriented architecture designed for scalability and maintainability.",
+    "tech": [
+        "Python",
+        "Object-Oriented Programming",
+        "Game Development"
+    ],
+    "github": "",
+    "live": ""
+    },
+    {
+      "title": "EvolvOut Website",
+      "description": "Designed and developed the company's website to showcase services, strengthen its online presence, and provide businesses with a modern digital experience.",
+      "tech": [
+        "React",
+        "Node.js",
+        "Tailwind CSS",
+        "JavaScript",
+        "Next.js",
+        "Framer Motion",
+        "Lucid React"
+      ],
+      "github": "https://github.com/LeonardoNkuba/evolvout-new",
+      "live": "https://www.evolvout.com/"
+    },
+    {
+      "title": "PEA Website",
+      "description": "Contributed to the development and improvement of the PEA web platform, creating responsive interfaces, implementing new features, and improving usability and overall system performance.",
+      "tech": [
+        "JavaScript",
+        "React",
+        "Node.js",
+        "SQL"
+      ],
+      "github": "https://github.com/Programa-de-Extensao-Academica/Site-PEA",
+      "live": "https://pea-edu.com/"
+    }
+  ]
+}

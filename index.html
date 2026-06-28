@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leonardo Nkuba</title>
+  <link rel="icon" href="images/favicon/favicon.ico" type="image/x-icon">
+  <meta name="theme-color" content="#070707">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container nav-content">
+      <a href="index.html" class="logo terminal-logo" aria-label="Home">
+        <span class="logo-prompt">&gt;_</span>
+        <span class="logo-name">LEONARDO</span>
+        <span class="logo-cursor">_</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false" title="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="scroll-link">// BIO</a></li>
+        <li><a href="#experience" class="scroll-link">// EXPERIENCE</a></li>
+        <li><a href="#projects" class="scroll-link">// WORK</a></li>
+        <li><a href="#contact" class="scroll-link nav-connect">CONNECT_</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Side Elements -->
+  <div class="side-element side-left">
+    <ul class="social-side-links" id="socialSideLinks"></ul>
+    <div class="side-line"></div>
+  </div>
+  <div class="side-element side-right">
+    <a href="#" class="email-link" id="emailLink" title="Send me an email"></a>
+    <div class="side-line"></div>
+  </div>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="container hero-content">
+      <div class="hero-status"><span class="status-dot"></span><span id="heroStatus">SYSTEM_READY</span></div>
+      <h1 class="hero-title" id="heroTitle"></h1>
+      <p class="hero-description" id="heroDescription"></p>
+      <div class="hero-cta-group">
+        <a href="#contact" class="btn btn-primary btn-large" id="contactBtnPrimary">INITIATE_CONTACT <span class="cta-arrow">↗</span></a>
+        <a href="#projects" class="btn btn-secondary" id="logsBtnPrimary">VIEW_LOGS</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="section-label">// BIO</div>
+      <div class="about-content">
+        <div class="about-text">
+          <h2 class="about-title" id="aboutTitle"></h2>
+          <p class="about-subtitle" id="aboutSubtitle"></p>
+          <p id="aboutText"></p>
+          <p class="skills-label">Tech Stack:</p>
+          <ul class="skills-list" id="skillsList"></ul>
+        </div>
+        <div class="about-stats">
+          <div class="stat-item" id="stat1"></div>
+          <div class="stat-item" id="stat2"></div>
+          <div class="stat-item" id="stat3"></div>
+          <div class="stat-item" id="stat4"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section experience-section">
+    <div class="container">
+      <div class="section-label">// CAREER_TRAJECTORY</div>
+      <h2 class="section-title">Logs</h2>
+      <div class="experience-timeline" id="experienceTimeline"></div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section projects-section">
+    <div class="container">
+      <div class="section-label">// STACK_ANALYSIS && CAPABILITIES</div>
+      <h2 class="section-title">Technical Core</h2>
+      <div class="projects-grid" id="projectsGrid"></div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact-section">
+    <div class="contact-watermark" id="contactWatermark">SAID</div>
+    <div class="container contact-inner">
+      <h2 class="contact-title">Initialize <span>Connection</span>.</h2>
+      <p class="contact-text">Available for scalable architectural challenges and high-impact engineering leadership.</p>
+      <div class="contact-cta-group">
+        <a href="https://linkedin.com/in/leonardo-nkuba" class="btn btn-primary btn-large" id="contactBtn" target="_blank" rel="noopener noreferrer" title="Visit LinkedIn Profile">
+          <i class="fab fa-linkedin-in"></i> LINKEDIN_PROFILE <span class="cta-arrow">↗</span>
+        </a>
+        <a href="" class="contact-email" id="contactEmailFooter" title="Send email"></a>
+      </div>
+      <div class="transmission-info">TRANSMISSION_FROM: ONTARIO_CANADA</div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>Leonardo Nkuba | 2026</p>
+      <p id="buildInfo">v1.0.1 [STABLE-FF]</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
