@@ -89,6 +89,22 @@
       ],
       "github": "https://github.com/Programa-de-Extensao-Academica/Site-PEA",
       "live": "https://pea-edu.com/"
-    }
+    },
+    {
+  "title": "KixiPay",
+  "description": "Designed and built a social fintech platform that digitizes the kixikila (community savings group), giving members transparent contribution tracking, loan requests/approvals, and a trust-score system to reduce fraud and build a financial reputation.",
+  "tech": [
+    "Next.js",
+    "React",
+    "TypeScript",
+    "Express",
+    "Node.js",
+    "Prisma",
+    "PostgreSQL",
+    "Tailwind CSS",
+    "JWT"
+  ],
+  "github": "https://github.com/LeonardoNkuba/kixipay"
+}
   ]
 }
