@@ -129,4 +129,4 @@ Personal portfolio — feel free to fork and customize for your own use.
 ---
 
 **Last Updated**: June 28, 2026  
-**Live Site**: [Your deployment URL]
+**Live Site**: https://leonardonkuba.vercel.app/
