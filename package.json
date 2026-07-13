@@ -1,0 +1,24 @@
+{
+  "name": "leonardo-nkuba-portfolio",
+  "version": "1.0.1",
+  "description": "A modern, tech-focused personal portfolio website featuring a terminal-inspired design system with responsive layout and smooth interactions.",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx http-server -p 8000",
+    "test": "echo \"No tests specified\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeonardoNkuba/Portfolio_v1.git"
+  },
+  "keywords": ["portfolio", "web-development", "static-site"],
+  "author": "Leonardo Nkuba",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LeonardoNkuba/Portfolio_v1/issues"
+  },
+  "homepage": "https://github.com/LeonardoNkuba/Portfolio_v1#readme",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
+}
