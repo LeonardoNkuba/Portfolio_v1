@@ -104,7 +104,8 @@
     "Tailwind CSS",
     "JWT"
   ],
-  "github": "https://github.com/LeonardoNkuba/kixipay"
+  "github": "https://github.com/LeonardoNkuba/kixipay",
+  "live": "https://kixipay.up.railway.app/"
 }
   ]
 }
