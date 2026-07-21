@@ -9,7 +9,9 @@ A modern, tech-focused personal portfolio website featuring a terminal-inspired 
 - **Body/Mono**: JetBrains Mono (400–700 weight, for code-like styling)
 
 ### Color Palette
-- **Terminal Green**: `#2DE2A1` — Primary accent and interactive elements
+Barcelona-inspired ("blaugrana"), tuned for contrast on a near-black background:
+- **Blaugrana Blue**: `#4A9EEA` — Primary accent, borders, static highlights
+- **Blaugrana Garnet**: `#E0417A` — Secondary accent, hover/interactive states
 - **Deep Charcoal**: `#070707` — Background and dark text
 - **System Gray**: `#606060` — Secondary text and borders
 - **Pure White**: `#FFFFFF` — Primary text
@@ -18,8 +20,8 @@ A modern, tech-focused personal portfolio website featuring a terminal-inspired 
 ### Components
 - Terminal-style navbar with mono logo (`>_ LEONARDO _`)
 - Navigation links with `//` prefix (e.g., `// BIO`, `// EXPERIENCE`)
-- Green CTA button (`CONNECT_`) with hover effects
-- Hero section with green text highlights
+- Blue CTA button (`CONNECT_`) that shifts to garnet on hover
+- Hero section with blue text highlights
 - Responsive hamburger menu (mobile)
 - Scroll-reveal animations for sections
 - Project cards with tech tags
@@ -81,7 +83,8 @@ Edit `data/content.json`:
 CSS variables in `css/style.css`:
 ```css
 :root {
-  --green: #2de2a1;
+  --accent: #4a9eea;
+  --accent-secondary: #e0417a;
   --dark-navy: #070707;
   --slate: #606060;
   --white: #ffffff;

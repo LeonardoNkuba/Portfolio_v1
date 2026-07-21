@@ -34,34 +34,34 @@
   "experience": [
     {
       "company": "EvolvOut",
-      "position": "Solutions Analyst & Co-Founder",
+      "position": "Software Developer & Co-founder",
       "period": "Dec 2024 - Present",
       "description": "Designed and delivered digital solutions for businesses, collaborating on websites, branding, and custom software while translating client needs into scalable technical solutions."
     },
     {
-      "company": "PEA - Programa de Extensão Acadêmica",
+      "company": "PEA - Academic Extension Program",
       "position": "Programmer & Systems Developer",
       "period": "Jul 2025 - Oct 2025",
       "description": "Developed and maintained full-stack systems, designed responsive user interfaces, optimized databases, and contributed to software that improved academic and administrative workflows."
-    },
-    {
-      "company": "Freelance",
-      "position": "Software & Web Developer",
-      "period": "Aug 2024 - Present",
-      "description": "Built full-stack applications and websites, including business solutions, web platforms, and software prototypes focused on usability, performance, and modern development practices."
     }
   ],
   "projects": [
     {
-    "title": "Python Monsters",
-    "description": "A turn-based RPG built in Python, inspired by Pokémon and the classic Final Fantasy series. The game features monster battles, character progression, inventory management, and modular object-oriented architecture designed for scalability and maintainability.",
-    "tech": [
-        "Python",
-        "Object-Oriented Programming",
-        "Game Development"
-    ],
-    "github": "",
-    "live": ""
+      "title": "KixiPay",
+      "description": "Designed and built a social fintech platform that digitizes the kixikila (community savings group), giving members transparent contribution tracking, loan requests/approvals, and a trust-score system to reduce fraud and build a financial reputation.",
+      "tech": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Express",
+        "Node.js",
+        "Prisma",
+        "PostgreSQL",
+        "Tailwind CSS",
+        "JWT"
+      ],
+      "github": "https://github.com/LeonardoNkuba/kixipay",
+      "live": "https://kixipay.up.railway.app/"
     },
     {
       "title": "EvolvOut Website",
@@ -89,23 +89,7 @@
       ],
       "github": "https://github.com/Programa-de-Extensao-Academica/Site-PEA",
       "live": "https://pea-edu.com/"
-    },
-    {
-  "title": "KixiPay",
-  "description": "Designed and built a social fintech platform that digitizes the kixikila (community savings group), giving members transparent contribution tracking, loan requests/approvals, and a trust-score system to reduce fraud and build a financial reputation.",
-  "tech": [
-    "Next.js",
-    "React",
-    "TypeScript",
-    "Express",
-    "Node.js",
-    "Prisma",
-    "PostgreSQL",
-    "Tailwind CSS",
-    "JWT"
-  ],
-  "github": "https://github.com/LeonardoNkuba/kixipay",
-  "live": "https://kixipay.up.railway.app/"
-}
+    }
+    
   ]
 }
