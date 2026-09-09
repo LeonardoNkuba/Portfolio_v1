@@ -1,6 +1,7 @@
 {
   "name": "Leonardo Nkuba",
   "tagline": "Software Developer",
+  "heroDescription": "I build web applications with React, Next.js, and Node.js. My work spans community savings tools, business websites, and academic platforms.",
   "bio": "I'm a Software Developer passionate about building practical digital solutions that solve real-world problems. I enjoy developing modern web applications, designing intuitive user experiences, and continuously expanding my knowledge of software engineering. Whether working independently or as part of a team, I strive to create reliable, scalable, and impactful software.",
   "email": "leonkubamn2020@gmail.com",
   "social": [
@@ -48,7 +49,7 @@
   "projects": [
     {
       "title": "KixiPay",
-      "description": "Designed and built a social fintech platform that digitizes the kixikila (community savings group), giving members transparent contribution tracking, loan requests/approvals, and a trust-score system to reduce fraud and build a financial reputation.",
+      "description": "Designed and built a social fintech platform that digitizes the kixikila (community savings group), with contribution tracking, loan requests and approvals, and a trust-score system.",
       "tech": [
         "Next.js",
         "React",

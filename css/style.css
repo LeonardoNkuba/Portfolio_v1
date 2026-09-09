@@ -296,12 +296,12 @@ h3,
 
 /* Hero Section */
 .hero {
-  min-height: 100vh;
+  min-height: 76svh;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 60px;
-  padding: 100px 0;
+  margin-top: 80px;
+  padding: 64px 0;
 }
 
 .hero-content {
@@ -473,7 +473,8 @@ h3,
 
 .about-content {
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
+  grid-template-columns: 1fr;
+  max-width: 800px;
   gap: 80px;
   align-items: start;
   position: relative;
@@ -1059,3 +1060,61 @@ h3,
     font-size: 14px;
   }
 }
+
+/* Personal experience story */
+.bartending-story-link {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 56px;
+  padding: 32px;
+  border: 1px solid var(--border-gray);
+  border-radius: 6px;
+  background: linear-gradient(120deg, rgba(var(--accent-rgb), .06), var(--navy));
+  color: var(--lightest-slate);
+  text-decoration: none;
+}
+.bartending-story-kicker { font-size: 10px; letter-spacing: .12em; color: var(--accent); }
+.bartending-story-link strong { font-family: var(--heading-font); font-size: clamp(24px, 3vw, 38px); font-weight: 400; color: var(--white); }
+.bartending-story-link > span { max-width: 600px; }
+.bartending-story-action { color: var(--accent); font-size: 12px; }
+.bartending-story-link:hover { border-color: var(--accent); }
+.bartending-story-link:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
+@media (max-width: 480px) {
+  .bartending-story-link { padding: 24px; }
+}
+/* Focused hero introduction */
+.hero-status { margin-bottom: 22px; }
+.hero-title { margin-bottom: 24px; }
+.hero-description { margin-bottom: 32px; }
+.hero-contact-link { color: var(--lightest-slate); font-size: 13px; text-decoration: none; padding: 12px 0; }
+.hero-contact-link:hover { color: var(--accent-secondary); }
+.hero-cta-group a:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
+#about, #projects, #contact { scroll-margin-top: 100px; }
+@keyframes heroEntrance { from { transform: translateY(10px); } to { transform: translateY(0); } }
+@media (prefers-reduced-motion: no-preference) {
+  .hero-title, .hero-description { animation: heroEntrance .5s ease-out; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .status-dot { animation: none; }
+}
+@media (max-width: 768px) {
+  .hero { padding: 56px 0; }
+  .hero-contact-link { align-self: center; }
+}
+
+/* Typing wordmark reserves its space to avoid layout shifts. */
+.logo-typing { position:relative; display:inline-block; flex:0 0 auto; font-family:var(--mono-font); font-size:20px; font-weight:700; width:calc(9ch + .8em); line-height:1.4; }
+.logo-typing .logo-name { display:block; width:calc(8ch + .8em); white-space:nowrap; font-size:inherit; }
+.logo-typing-cursor { position:absolute; left:calc(8ch + .8em); top:0; color:var(--accent); }
+.terminal-logo:hover .logo-typing-cursor { color:var(--accent-secondary); }
+.terminal-logo:focus-visible { outline:2px solid var(--accent); outline-offset:6px; }
+@keyframes nameTyping { from { clip-path:inset(0 100% 0 0); } to { clip-path:inset(0 0 0 0); } }
+@keyframes typingCursorMove { from { left:0; } to { left:calc(8ch + .8em); } }
+@keyframes typingCursorBlink { 0%,49% { opacity:1; } 50%,100% { opacity:0; } }
+@media (prefers-reduced-motion:no-preference) {
+  .logo-typing .logo-name { animation:nameTyping 1.2s steps(8,end) .25s both; }
+  .logo-typing-cursor { animation:typingCursorMove 1.2s steps(8,end) .25s both, typingCursorBlink .6s step-end 1.45s 3; }
+}
+@media (max-width:480px) { .logo-typing { font-size:22px; } }

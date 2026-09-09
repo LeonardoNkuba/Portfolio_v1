@@ -1,4 +1,4 @@
-﻿async function loadContent() {
+async function loadContent() {
   try {
     const response = await fetch('data/content.json')
     const data = await response.json()
@@ -10,11 +10,9 @@
 
 function renderContent(d) {
   const heroTitle = document.getElementById('heroTitle')
-  if (heroTitle) {
-    heroTitle.innerHTML = d.tagline.replace(/INFRASTRUCTURE/g, '<span class="green">INFRASTRUCTURE</span>').replace(/IMPOSSIBLE/g, '<span class="green">IMPOSSIBLE</span>').replace(/scalable/g, '<span class="green">scalable</span>')
-  }
+  if (heroTitle) heroTitle.textContent = d.tagline
   const heroDesc = document.getElementById('heroDescription')
-  if (heroDesc) heroDesc.textContent = d.bio
+  if (heroDesc) heroDesc.textContent = d.heroDescription || d.bio
   const contactEmail = document.getElementById('contactEmailFooter')
   if (contactEmail) { contactEmail.textContent = d.email; contactEmail.href = 'mailto:' + d.email }
   const contactBtn = document.getElementById('contactBtn')
@@ -22,7 +20,7 @@ function renderContent(d) {
   if (li && contactBtn) contactBtn.href = li.url
 
   const aboutTitle = document.getElementById('aboutTitle')
-  if (aboutTitle) aboutTitle.textContent = 'Architecting the ' + d.name.split(' ')[0] + ' scalable.'
+  if (aboutTitle) aboutTitle.textContent = 'About ' + d.name.split(' ')[0]
   const aboutSub = document.getElementById('aboutSubtitle')
   if (aboutSub) aboutSub.textContent = 'SYSTEM_STATUS: ONLINE'
   const aboutText = document.getElementById('aboutText')
@@ -36,12 +34,6 @@ function renderContent(d) {
       skillsList.appendChild(li)
     })
   }
-
-  const stats = [{ number: '1B+', label: 'MONTHLY_REQ' }, { number: '37%', label: 'COST_OPT' }, { number: '99.9%', label: 'UPTIME' }, { number: '06', label: 'EXP_YEARS' }]
-  stats.forEach((stat, idx) => {
-    const el = document.getElementById('stat' + (idx + 1))
-    if (el) el.innerHTML = '<div class="stat-number">' + stat.number + '</div><div class="stat-label">' + stat.label + '</div>'
-  })
 
   const timeline = document.getElementById('experienceTimeline')
   if (timeline) {
@@ -94,33 +86,13 @@ function renderContent(d) {
   if (emailLink) { emailLink.textContent = d.email; emailLink.href = 'mailto:' + d.email }
 }
 
-const navbar = document.querySelector('.navbar')
-window.addEventListener('scroll', () => {
-  if (navbar) navbar.classList.toggle('scrolled', window.scrollY > 50)
-})
-
-const menuToggle = document.getElementById('menuToggle')
-const navLinks = document.getElementById('navLinks')
-if (menuToggle && navLinks) {
-  menuToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('active')
-    menuToggle.classList.toggle('active')
-    menuToggle.setAttribute('aria-expanded', navLinks.classList.contains('active'))
-  })
-  document.querySelectorAll('.scroll-link').forEach(link => {
-    link.addEventListener('click', () => {
-      navLinks.classList.remove('active')
-      menuToggle.classList.remove('active')
-      menuToggle.setAttribute('aria-expanded', 'false')
-    })
-  })
-}
-
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault()
-    const target = document.querySelector(this.getAttribute('href'))
-    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    const href = this.getAttribute('href')
+    if (href === '#') return
+    const target = document.querySelector(href)
+    if (target) target.scrollIntoView({ behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth', block: 'start' })
   })
 })
 

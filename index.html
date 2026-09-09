@@ -16,12 +16,14 @@
   <!-- Navigation -->
   <nav class="navbar">
     <div class="container nav-content">
-      <a href="index.html" class="logo terminal-logo" aria-label="Home">
+      <a href="index.html" class="logo terminal-logo" aria-label="Leonardo - Home">
         <span class="logo-prompt">&gt;_</span>
-        <span class="logo-name">LEONARDO</span>
-        <span class="logo-cursor">_</span>
+        <span class="logo-typing" aria-hidden="true">
+          <span class="logo-name">LEONARDO</span>
+          <span class="logo-typing-cursor">_</span>
+        </span>
       </a>
-      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false" title="Menu">
+      <button class="menu-toggle" id="menuToggle" aria-controls="navLinks" aria-label="Open navigation menu" aria-expanded="false" title="Menu">
         <span></span>
         <span></span>
         <span></span>
@@ -48,15 +50,15 @@
   <!-- Hero Section -->
   <section id="hero" class="hero">
     <div class="container hero-content">
-      <div class="hero-status"><span class="status-dot"></span><span id="heroStatus">SYSTEM_READY</span></div>
-      <h1 class="hero-title" id="heroTitle"></h1>
-      <p class="hero-description" id="heroDescription"></p>
+      <div class="hero-status"><span class="status-dot"></span><span id="heroStatus">HI, I'M LEONARDO NKUBA</span></div>
+      <h1 class="hero-title" id="heroTitle">Software Developer</h1>
+      <p class="hero-description" id="heroDescription">I build web applications with React, Next.js, and Node.js. My work spans community savings tools, business websites, and academic platforms.</p>
       <div class="hero-cta-group">
-        <a href="#contact" class="btn btn-primary btn-large" id="contactBtnPrimary">INITIATE_CONTACT <span class="cta-arrow">↗</span></a>
-        <a href="#projects" class="btn btn-secondary" id="logsBtnPrimary">VIEW_LOGS</a>
+        <a href="#projects" class="btn btn-primary btn-large" id="projectsBtnPrimary">View Projects <span class="cta-arrow" aria-hidden="true">&#8599;</span></a>
         <a href="data/Leonardo_Nkuba.pdf" class="btn btn-secondary" id="resumeBtn" download title="Download Resume">
-          <i class="fa-solid fa-download"></i> DOWNLOAD_RESUME
+          <i class="fa-solid fa-download" aria-hidden="true"></i> Download Resume
         </a>
+        <a href="#contact" class="hero-contact-link">Get in Touch <span aria-hidden="true">&#8599;</span></a>
       </div>
     </div>
   </section>
@@ -73,12 +75,6 @@
           <p class="skills-label">Tech Stack:</p>
           <ul class="skills-list" id="skillsList"></ul>
         </div>
-        <div class="about-stats">
-          <div class="stat-item" id="stat1"></div>
-          <div class="stat-item" id="stat2"></div>
-          <div class="stat-item" id="stat3"></div>
-          <div class="stat-item" id="stat4"></div>
-        </div>
       </div>
     </div>
   </section>
@@ -89,6 +85,12 @@
       <div class="section-label">// CAREER_TRAJECTORY</div>
       <h2 class="section-title">Logs</h2>
       <div class="experience-timeline" id="experienceTimeline"></div>
+      <a href="bartending.html" class="bartending-story-link">
+        <span class="bartending-story-kicker">AFTER HOURS / A PERSONAL STORY</span>
+        <strong>Behind the bar.</strong>
+        <span>A fully booked Mother's Day, a busy bar, and the people behind the service.</span>
+        <span class="bartending-story-action">Read the story &#8599;</span>
+      </a>
     </div>
   </section>
 
@@ -103,10 +105,10 @@
 
   <!-- Contact Section -->
   <section id="contact" class="section contact-section">
-    <div class="contact-watermark" id="contactWatermark">SAID</div>
+    <div class="contact-watermark" id="contactWatermark" aria-hidden="true">LEONARDO</div>
     <div class="container contact-inner">
       <h2 class="contact-title">Initialize <span>Connection</span>.</h2>
-      <p class="contact-text">Available for scalable architectural challenges and high-impact engineering leadership.</p>
+      <p class="contact-text">Let's talk about software development opportunities and web projects.</p>
       <div class="contact-cta-group">
         <a href="https://linkedin.com/in/leonardo-nkuba" class="btn btn-primary btn-large" id="contactBtn" target="_blank" rel="noopener noreferrer" title="Visit LinkedIn Profile">
           <i class="fab fa-linkedin-in"></i> LINKEDIN_PROFILE <span class="cta-arrow">↗</span>
@@ -125,6 +127,7 @@
     </div>
   </footer>
 
+  <script src="js/navigation.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
